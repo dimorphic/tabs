@@ -88,6 +88,7 @@ React.render(
 | editable | { onEdit(type: 'add' | 'remove', info: { key, event }), showAdd: boolean, removeIcon: ReactNode, addIcon: ReactNode } | - | config tab editable |
 | locale | { dropdownAriaLabel: string, removeAriaLabel: string, addAriaLabel: string } | - | Accessibility locale help text |
 | moreIcon | ReactNode | - | collapse icon |
+| morePopupContainer | (menuDOMNode) => HTMLElement | () => document.body | DOM node container for 'more' dropdown popup |
 | tabBarGutter | number | 0 | config tab bar gutter |
 | tabBarPosition | `'left' | 'right' | 'top' | 'bottom'` | `'top'` | tab nav 's position |
 | tabBarStyle | style | - | tab nav style |
