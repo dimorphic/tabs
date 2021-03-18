@@ -62,6 +62,8 @@ export interface TabsProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'o
 
   // Icons
   moreIcon?: React.ReactNode;
+  morePopupContainer?: (node: HTMLElement) => HTMLElement;
+
   /** @private Internal usage. Not promise will rename in future */
   moreTransitionName?: string;
 }
@@ -103,6 +105,7 @@ function Tabs(
     tabBarExtraContent,
     locale,
     moreIcon,
+    morePopupContainer,
     moreTransitionName,
     destroyInactiveTabPane,
     renderTabBar,
@@ -205,6 +208,7 @@ function Tabs(
     locale,
     moreIcon,
     moreTransitionName,
+    morePopupContainer,
     tabBarGutter,
     onTabClick: onInternalTabClick,
     onTabScroll,

@@ -37,6 +37,7 @@ export interface TabNavListProps {
   editable?: EditableConfig;
   moreIcon?: React.ReactNode;
   moreTransitionName?: string;
+  morePopupContainer?: (node: HTMLElement) => HTMLElement;
   mobile: boolean;
   tabBarGutter?: number;
   renderTabBar?: RenderTabBar;
