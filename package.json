@@ -1,5 +1,5 @@
 {
-  "name": "rc-tabs",
+  "name": "@dimorphic/rc-tabs",
   "version": "11.7.3",
   "description": "tabs ui component for react",
   "engines": {
